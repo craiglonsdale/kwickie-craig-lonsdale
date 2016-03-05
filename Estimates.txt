@@ -1,0 +1,28 @@
+Recommendation engines
+
+First I would find some metrics about the user that describes what type of questions
+they frequently engage with
+
+- Find a users most viewed VIPs
+- Find the sponsors that the user has the most engagement with
+- Find a users favorite questioners (could be VIP or regular user)
+- Calculate an average length video that the user actively engages with (maybe a range
+  either side +- 10 seconds).
+  
+For a video to be counted in these metrics it should be mostly viewed (80% or more).
+
+Using these we can calculate the videos that fall into these different categories.
+Videos that fall in to more of the categories will be more highly recommended. Additionally
+we might think about adding a weighting mechanic that will add different weightings to
+the categories. This will take some tweaking over time and work with users to figure out
+what the most important categories are to users.
+You could also add in a category that will show users 'viral' videos in their recommendations
+because you don't want to be the only one of your friends not have seen that latest hit.
+
+In these estimates I will assume that I have prior knowledge of the database being used
+and the current APIs that are implemented.
+
+1. Generate the 4 collections - 1 day
+2. Create mechanism that sorts the video into the category 'buckets' - 1 day
+3. Implementing a weighting mechanism that can be tweaked by user feedback - 4h
+4. Implement a mechanism to inject popular videos into the recommendation stream - 4h

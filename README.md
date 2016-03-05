@@ -27,3 +27,9 @@ npm start
 ```
 npm test
 ```
+
+### 5. Dependencies
+
+MongoDB
+NodeJS 4.2.1 or higher
+Node Package Manager
