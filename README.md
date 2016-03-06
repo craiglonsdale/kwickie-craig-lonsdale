@@ -30,6 +30,4 @@ npm test
 
 ### 5. Dependencies
 
-MongoDB
-NodeJS 4.2.1 or higher
-Node Package Manager
+MongoDB, NodeJS 4.2.1 or higher and Node Package Manager
