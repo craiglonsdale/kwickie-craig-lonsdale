@@ -3,7 +3,7 @@ const config = require('../test.js');
 const mongoose = require('mongoose');
 const mockgoose = require('mockgoose');
 mockgoose(mongoose);
-require('../database')(config, mongoose);
+require('../database')(config);
 const app = require('../app')(config);
 
 app.listen(config.port, function () {

@@ -24,12 +24,12 @@
     "mongoose": "^4.4.5"
   },
   "engines": {
-    "node": ">=0.12.0",
+    "node": ">=4.2.1",
     "npm": ">=2.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:craiglonsdale/kwickie-tech-test.git"
+    "url": "git@github.com:craiglonsdale/kwickie-craig-lonsdale"
   },
   "author": "Craig Lonsdale <craig.lonsdale@gmail.com.au>"
 }

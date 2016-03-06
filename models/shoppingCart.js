@@ -7,10 +7,13 @@ const ShoppingCart = new Schema({
   }
 });
 
+/**
+ * Finds all of the shopping carts items and removes them before
+ * removing the shopping cart document from the DB
+ */
 ShoppingCart.pre('remove', next => {
   const ShoppingItem = mongoose.model('shoppingitem');
-  ShoppingItem.remove({ShoppingCart: this._id}).exec();
-  return next();
+  return ShoppingItem.remove({ShoppingCart: this._id}, next);
 });
 
 module.exports = ShoppingCart;
